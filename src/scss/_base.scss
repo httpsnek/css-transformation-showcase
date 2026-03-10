@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+:root {
+  font-family:             $font-stack;
+  line-height:             1.5;
+  font-weight:             400;
+
+  color-scheme:            light dark;
+  color:                   $color-text-dark;
+  background-color:        $color-bg-dark;
+
+  font-synthesis:          none;
+  text-rendering:          optimizeLegibility;
+  -webkit-font-smoothing:  antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight:     500;
+  color:           $color-brand;
+  text-decoration: inherit;
+
+  &:hover {
+    color: $color-brand-hover;
+  }
+}
+
+body {
+  margin:      0;
+  display:     flex;
+  place-items: center;
+  min-width:   320px;
+  min-height:  100vh;
+}
+
+h1 {
+  font-size:   3.2em;
+  line-height: 1.1;
+}
