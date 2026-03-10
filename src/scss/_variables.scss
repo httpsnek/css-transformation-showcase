@@ -1,14 +1,34 @@
+// ── Brand / Neon ─────────────────────────────────────────────
 $color-brand:       #646cff;
 $color-brand-hover: #535bf2;
 $color-brand-light: #747bff;
-$color-bg-dark:     #242424;
+$color-neon-cyan:   #00e5ff;
+$color-neon-purple: #bf5af2;
+$color-neon-glow:   rgba(0, 229, 255, 0.35);
+
+// ── Background ───────────────────────────────────────────────
+$color-bg-dark:     #060818;
 $color-bg-light:    #ffffff;
+$color-orb-blue:    rgba(100, 108, 255, 0.25);
+$color-orb-purple:  rgba(191, 90, 242, 0.2);
+
+// ── Text ─────────────────────────────────────────────────────
 $color-text-dark:   rgba(255, 255, 255, 0.87);
 $color-text-light:  #213547;
-$color-muted:       #888;
+$color-muted:       rgba(255, 255, 255, 0.4);
+
+// ── Glass card ───────────────────────────────────────────────
+$glass-bg:          rgba(255, 255, 255, 0.05);
+$glass-border:      rgba(255, 255, 255, 0.12);
+$glass-blur:        15px;
+$glass-radius:      20px;
+$glass-shadow:      0 8px 32px rgba(0, 0, 0, 0.5);
+
+// ── Button ───────────────────────────────────────────────────
 $color-btn-dark:    #1a1a1a;
 $color-btn-light:   #f9f9f9;
 
+// ── Typography / Misc ────────────────────────────────────────
 $font-stack:        system-ui, Avenir, Helvetica, Arial, sans-serif;
 $transition-fast:   0.25s;
 $transition-shadow: 300ms;

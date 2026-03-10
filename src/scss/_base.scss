@@ -5,7 +5,7 @@
   line-height:             1.5;
   font-weight:             400;
 
-  color-scheme:            light dark;
+  color-scheme:            dark;
   color:                   $color-text-dark;
   background-color:        $color-bg-dark;
 
@@ -21,16 +21,23 @@ a {
   text-decoration: inherit;
 
   &:hover {
-    color: $color-brand-hover;
+    color: $color-brand-light;
   }
 }
 
 body {
   margin:      0;
-  display:     flex;
-  place-items: center;
   min-width:   320px;
   min-height:  100vh;
+  display:     flex;
+  place-items: center;
+
+  // Dark gradient mesh background
+  background:
+    radial-gradient(ellipse 60% 50% at 20% 30%,  $color-orb-blue   0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 80% 70%,  $color-orb-purple 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 60% 10%,  rgba(100, 108, 255, 0.15) 0%, transparent 60%),
+    linear-gradient(135deg, #060818 0%, #0d0f2b 50%, #0a0618 100%);
 }
 
 h1 {

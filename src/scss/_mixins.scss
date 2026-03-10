@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+@mixin glass {
+  background:     $glass-bg;
+  backdrop-filter: blur($glass-blur);
+  -webkit-backdrop-filter: blur($glass-blur);
+  border:         1px solid $glass-border;
+  border-radius:  $glass-radius;
+  box-shadow:     $glass-shadow;
+}
+
+@mixin neon-text($color) {
+  color:       $color;
+  text-shadow: 0 0 8px $color, 0 0 24px rgba($color, 0.5);
+}
+
+@mixin neon-glow-button($color) {
+  box-shadow: 0 0 12px rgba($color, 0.5), 0 0 32px rgba($color, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
